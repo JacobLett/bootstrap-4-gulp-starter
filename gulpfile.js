@@ -222,15 +222,6 @@ gulp.task('copy-assets', function(done) {
 		.src(`${paths.node}font-awesome/scss/*.scss`)
 		.pipe(gulp.dest(`${paths.dev}/sass/fontawesome`));
 
-	// _s SCSS files
-	gulp
-		.src(`${paths.node}undescores-for-npm/sass/media/*.scss`)
-		.pipe(gulp.dest(`${paths.dev}/sass/underscores`));
-
-	// _s JS files into /src/js
-	gulp
-		.src(`${paths.node}undescores-for-npm/js/skip-link-focus-fix.js`)
-		.pipe(gulp.dest(`${paths.dev}/js`));
 
 	done();
 });
